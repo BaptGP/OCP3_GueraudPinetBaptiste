@@ -1,0 +1,197 @@
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Police*/
+@font-face{
+    font-family: "Roboto";
+    src: url(../OhMyFood/polices/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+@font-face{
+    font-family: "Roboto Bold";
+    src: url(../OhMyFood/polices/Roboto/Roboto-Bold.ttf) format("truetype");
+}
+
+body{
+    font-family: "Roboto";
+}
+h1, h2{
+    font-family: "Roboto Bold";
+}
+b{
+    font-family: "Roboto Bold";
+}
+
+
+/*HEADER*/
+.logo{
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 0 3px 3px #cfcfcf;
+    position: relative;
+}
+.logo img{
+    display: block;
+    margin: 0px auto;
+}
+.localisation{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #eaeaea;
+    padding: 15px 0;
+}
+.localisation .fas{
+    margin-right: 10px;
+}
+.reservez{
+    width: 100%;
+    background-color: #f6f6f6;
+    margin-top: 0;
+    text-align: center;
+    padding: 20px 0;
+}
+.reservez h1{
+    font-size: 25px;
+    margin: 10px 0 0 0;
+    padding: 10px 40px;
+}
+.reservez p{
+    padding: 10px 10px;
+    font-size: 20px;
+    color: #7d7d7d;
+}
+.reservez button{
+    margin: 20px 0 40px 0;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 30px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: #FFF;
+    border-style: none;
+    box-shadow: 0 5px 5px #cfcfcf;
+}
+
+
+/*FONCTIONNEMENT*/
+.fonctionnement{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.fonctionnement h2{
+    font-size: 25px;
+    margin: 40px 10px;
+    width: 100%;
+}
+.fonctionnement__vignette{
+    display: flex;
+}
+.fonctionnement__vignette span{
+    background-color: #9356DC;
+    color: #FFF;
+    border-radius: 50%;
+    height: 20px;
+    width: 25px;
+    text-align: center;
+    position: relative;
+    left: 12px;
+    top: 27px;
+    padding-top: 5px;
+}
+.fonctionnement__vignette--titre{
+    display: flex;
+    justify-content: center;
+    background-color: #f6f6f6;
+    width: 90%;
+    margin: 10px 20px 10px auto;
+    padding: 20px 0;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px #cfcfcf;
+}
+.fonctionnement__vignette--titre a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
+.fonctionnement__vignette--titre a:hover{
+    background-color: #f5edff;
+}
+.fonctionnement__vignette--titre .fas{
+    position: relative;
+    left: -35px;
+    color: grey;
+}
+.fonctionnement__vignette--titre .fas:hover{
+    color: #9356DC;
+}
+
+/*RESTAURANTS*/
+.restaurants{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #f6f6f6;
+}
+.restaurants h2{
+    font-size: 25px;
+    margin: 40px 10px;
+    width: 100%;
+}
+.restaurants img{
+    object-fit: cover;
+    width: 100%;
+    height: 180px;
+    border-radius: 20px 20px 0 0;
+}
+.restaurants h3, .restaurants p{
+    margin: 10px;
+}
+.restaurants__vignette{
+    width: 90%;
+    margin: 10px auto;
+    border-radius: 20px;
+    background-color: #FFF;
+
+}
