@@ -46,15 +46,15 @@ table {
 /*Police*/
 @font-face{
     font-family: "Roboto";
-    src: url(../OhMyFood/polices/Roboto/Roboto-Regular.ttf) format("truetype");
+    src: url(polices/Roboto/Roboto-Regular.ttf) format("truetype");
 }
 @font-face{
     font-family: "Roboto Bold";
-    src: url(../OhMyFood/polices/Roboto/Roboto-Bold.ttf) format("truetype");
+    src: url(polices/Roboto/Roboto-Bold.ttf) format("truetype");
 }
 @font-face{
     font-family: "Shrikhand";
-    src: url(../OhMyFood/polices/Shrikhand/Shrikhand-Regular.ttf) format("truetype");
+    src: url(polices/Shrikhand/Shrikhand-Regular.ttf) format("truetype");
 }
 
 body{
