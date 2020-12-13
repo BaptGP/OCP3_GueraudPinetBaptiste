@@ -52,6 +52,10 @@ table {
     font-family: "Roboto Bold";
     src: url(../OhMyFood/polices/Roboto/Roboto-Bold.ttf) format("truetype");
 }
+@font-face{
+    font-family: "Shrikhand";
+    src: url(../OhMyFood/polices/Shrikhand/Shrikhand-Regular.ttf) format("truetype");
+}
 
 body{
     font-family: "Roboto";
@@ -122,13 +126,13 @@ b{
 }
 .fonctionnement h2{
     font-size: 25px;
-    margin: 40px 10px;
+    margin: 40px 20px;
     width: 100%;
 }
 .fonctionnement__vignette{
     display: flex;
 }
-.fonctionnement__vignette span{
+.chiffre{
     background-color: #9356DC;
     color: #FFF;
     border-radius: 50%;
@@ -140,7 +144,7 @@ b{
     top: 27px;
     padding-top: 5px;
 }
-.fonctionnement__vignette--titre{
+.fonctionnement__vignette--titre {
     display: flex;
     justify-content: center;
     background-color: #f6f6f6;
@@ -150,12 +154,7 @@ b{
     border-radius: 20px;
     box-shadow: 0 5px 5px #cfcfcf;
 }
-.fonctionnement__vignette--titre a{
-    text-decoration: none;
-    color: black;
-    display: flex;
-}
-.fonctionnement__vignette--titre a:hover{
+.fonctionnement__vignette--titre:hover{
     background-color: #f5edff;
 }
 .fonctionnement__vignette--titre .fas{
@@ -167,16 +166,19 @@ b{
     color: #9356DC;
 }
 
+
 /*RESTAURANTS*/
 .restaurants{
     width: 100%;
     display: flex;
     flex-direction: column;
     background-color: #f6f6f6;
+    margin-top: 55px;
+    padding-bottom: 50px;
 }
 .restaurants h2{
     font-size: 25px;
-    margin: 40px 10px;
+    margin: 40px 10px 20px 20px;
     width: 100%;
 }
 .restaurants img{
@@ -193,5 +195,19 @@ b{
     margin: 10px auto;
     border-radius: 20px;
     background-color: #FFF;
+    box-shadow: 0 5px 5px #cfcfcf;
+}
 
+/*FOOTER*/
+footer{
+    background-color: #353535;
+    color: #FFF;
+    padding: 20px 0 10px 10px;
+}
+.footerlogo{
+    font-family: "Shrikhand";
+    margin: 10px;
+}
+.footer{
+    margin: 5px 10px;
 }
