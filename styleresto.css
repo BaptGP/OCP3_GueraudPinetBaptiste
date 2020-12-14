@@ -1,0 +1,158 @@
+/*CSS RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*Police*/
+@font-face{
+    font-family: "Roboto";
+    src: url(polices/Roboto/Roboto-Regular.ttf) format("truetype");
+}
+@font-face{
+    font-family: "Roboto Bold";
+    src: url(polices/Roboto/Roboto-Bold.ttf) format("truetype");
+}
+@font-face{
+    font-family: "Shrikhand";
+    src: url(polices/Shrikhand/Shrikhand-Regular.ttf) format("truetype");
+}
+
+body{
+    font-family: "Roboto";
+}
+h1, h2{
+    font-family: "Roboto Bold";
+}
+b{
+    font-family: "Roboto Bold";
+}
+a{
+    text-decoration: none;
+}
+
+
+/*HEADER*/
+.logo{
+    width: 100%;
+    padding: 20px 0;
+    box-shadow: 0 3px 3px #cfcfcf;
+    position: relative;
+}
+.logo img{
+    display: block;
+    margin: 0px auto;
+}
+.restoimg img{
+    width: 100%;
+    object-fit: cover;
+}
+
+/*MAIN*/
+main{
+    background-color: #f6f6f6;
+    width: 100%;
+    padding: 40px 0 20px 0;
+    margin-bottom: 0;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    top: -55px;
+}
+main h3{
+    margin: 35px 0 20px 20px;
+}
+.titre{
+    display: flex;
+}
+.titre h2{
+    font-family: "Shrikhand";
+    font-size: 25px;
+    margin-left: 10px;
+}
+.vignette{
+    width: 90%;
+    background-color: #FFF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10px auto;
+    padding: 15px 0 15px 15px;
+    border-radius: 20px;
+    box-shadow: 0 5px 5px #cfcfcf;
+}
+.vignette h4{
+    margin-bottom: 5px;
+}
+.vignette p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/*BOUTTON*/
+main button{
+    display: block;
+    margin: 70px auto;
+    padding: 15px 50px;
+    font-size: 20px;
+    border-radius: 30px;
+    background: linear-gradient(#FF79DA, #9356DC);
+    color: #FFF;
+    border-style: none;
+    box-shadow: 0 5px 5px #cfcfcf;
+}
+
+
+/*FOOTER*/
+footer{
+    background-color: #353535;
+    color: #FFF;
+    padding: 20px 0 10px 10px;
+}
+.footerlogo{
+    font-family: "Shrikhand";
+    display: block;
+    margin: 10px 0 20px 10px;
+}
+.footer{
+    margin: 5px 10px;
+}
