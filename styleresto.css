@@ -69,24 +69,45 @@ b{
 a{
     text-decoration: none;
 }
+a:visited{
+    color: black;
+}
 
 
 /*HEADER*/
 .logo{
     width: 100%;
     padding: 20px 0;
-    box-shadow: 0 3px 3px #cfcfcf;
     position: relative;
+}
+.logo .fas{
+    float: left;
+    font-size: 25px;
+    top: 24px;
+    left: 10px;
+    position: absolute;
 }
 .logo img{
     display: block;
     margin: 0px auto;
 }
-.restoimg img{
+.lapalette img{
     width: 100%;
     object-fit: cover;
 }
-
+.lanote img{
+    width: 100%;
+    object-fit: cover;
+    height: 277px;
+}
+.ledelice img{
+    width: 100%;
+    object-fit: cover;
+}
+.lafrancaise img{
+    width: 100%;
+    object-fit: cover;
+}
 /*MAIN*/
 main{
     background-color: #f6f6f6;
@@ -98,10 +119,16 @@ main{
     top: -55px;
 }
 main h3{
-    margin: 35px 0 20px 20px;
+    margin: 35px 0 5px 20px;
+    
 }
 .titre{
     display: flex;
+    justify-content: space-between;
+}
+.titre .far{
+    margin-right: 25px;
+    font-size: 25px;
 }
 .titre h2{
     font-family: "Shrikhand";
@@ -126,6 +153,20 @@ main h3{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+.barre{
+    width: 40px;
+    height: 3px;
+    background-color: #99E2D0;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.flexprix{
+    display: flex;
+    justify-content: space-between;
+}
+.prix{
+    margin-right: 15px;
 }
 
 /*BOUTTON*/
