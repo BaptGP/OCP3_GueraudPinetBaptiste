@@ -73,6 +73,9 @@ a{
 a:visited{
     color: black;
 }
+.mailto{
+    color: #FFF;
+}
 
 /*HEADER*/
 .logo{
@@ -121,8 +124,13 @@ a:visited{
     color: #FFF;
     border-style: none;
     box-shadow: 0 5px 5px #cfcfcf;
+    cursor: pointer;
+    
 }
-
+.reservez button:hover{
+    opacity: 0.9;
+    box-shadow: 0 7px 7px #969696;
+}
 
 /*FONCTIONNEMENT*/
 .fonctionnement{
@@ -208,6 +216,23 @@ a:visited{
     top: -19px;
     font-size: 21px;
 }
+.restaurants__vignette .fas{
+    position: relative;
+    float: right;
+    right: 20px;
+    top: -19px;
+    font-size: 21px;
+    -webkit-text-fill-color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+.restaurants__vignette .fas:hover{
+    background: linear-gradient(#FF79DA, #9356DC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 0;
+    transition: 500ms;
+}
 .restaurants__vignette--nouveau{
     position: relative;
     float: right;
@@ -224,6 +249,12 @@ footer{
     background-color: #353535;
     color: #FFF;
     padding: 20px 0 10px 10px;
+}
+.footer .fas{
+    padding: 2px;
+}
+.fa-hands-helping{
+    font-size: 11px;
 }
 .footerlogo{
     font-family: "Shrikhand";
