@@ -180,6 +180,31 @@ main h3{
 .prix{
     margin-right: 15px;
 }
+.entrees{
+    animation: slideDown 2s;
+}
+.plats{
+    animation: slideDown 3s;
+}
+.dessert{
+    animation: slideDown 4s;
+}
+
+
+@keyframes slideDown {
+    from {
+        transform: translateY(200px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+
 
 /*BOUTTON*/
 main button{
@@ -193,11 +218,14 @@ main button{
     border-style: none;
     box-shadow: 0 5px 5px #cfcfcf;
     cursor: pointer;
+    transition: .3s;
 }
 main button:hover{
     opacity: 0.9;
     box-shadow: 0 7px 7px #969696;
 }
+
+
 
 
 /*FOOTER*/
