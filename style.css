@@ -59,6 +59,10 @@ table {
 
 body{
     font-family: "Roboto";
+
+}
+header, main, footer{
+    animation: opacityBody 2s;
 }
 h1, h2{
     font-family: "Roboto Bold";
@@ -170,14 +174,15 @@ a:visited{
 .fonctionnement__vignette--titre:hover{
     background-color: #f5edff;
 }
+.fonctionnement__vignette--titre:hover .fas{
+    color: #9356DC;
+}
 .fonctionnement__vignette--titre .fas{
     position: relative;
     left: -35px;
     color: grey;
 }
-.fonctionnement__vignette--titre .fas:hover{
-    color: #9356DC;
-}
+
 
 
 /*RESTAURANTS*/
@@ -263,4 +268,69 @@ footer{
 }
 .footer{
     margin: 5px 10px;
+}
+
+
+/*LOADING*/
+.loading{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.loading__loader{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    border-radius: 50px;
+    border: 6px solid rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    animation: opacity 2s forwards;
+    top: 250px;
+}
+.loading__loader:after{
+    content: '';
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    bottom: -6px;
+    right: -6px;
+    border-radius: 50px;
+    border: 6px solid transparent;
+    border-top-color: #FFF;
+    animation: spin 1s linear 0s infinite;
+}
+
+@keyframes spin{
+    0%{
+        transform: rotate(0deg);
+
+    }
+    100%{
+        transform: rotate(360deg);
+
+    }
+}
+@keyframes opacity{
+    0%{
+        opacity: 1;
+    }
+    99%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@keyframes opacityBody{
+    0%{
+        opacity: 0.2;
+    }
+    99%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+    }
 }
