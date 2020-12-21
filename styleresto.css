@@ -245,3 +245,49 @@ footer{
 .footer{
     margin: 5px 10px;
 }
+
+
+
+
+
+
+@media screen and (min-width: 768px){
+    .lapalette img{
+        height: 500px;
+    }
+    .lanote img{
+        height: 500px;
+    }
+    .ledelice img{
+        height: 500px;
+    }
+    .lafrancaise img{
+        height: 500px;
+    }
+    main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .button{
+        width: 100%;
+    }
+    .titre{
+        width: 100%;
+    }
+    .titre h2{
+        margin-bottom: 30px;
+    }
+    .entrees{
+        width: 33%;
+    }
+    .plats{
+        width: 33%;
+    }
+    .dessert{
+        width: 33%;
+    }
+    footer{
+        text-align: center;
+    }
+}

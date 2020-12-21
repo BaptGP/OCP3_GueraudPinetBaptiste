@@ -73,6 +73,7 @@ b{
 a{
     text-decoration: none;
     color: black;
+    outline: 0;
 }
 a:visited{
     color: black;
@@ -332,5 +333,56 @@ footer{
     }
     100%{
         opacity: 1;
+    }
+}
+
+
+
+
+@media screen and (min-width: 768px)
+{
+    .fonctionnement{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .fonctionnement h2{
+        width: 100%;
+    }
+    .fonctionnement__vignette--titre{
+        height: 150px;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .fonctionnement__vignette--titre span{
+        font-size: 20px;
+    }
+    .fonctionnement__vignette--titre .fas{
+        position: inherit;
+        margin-bottom: 40px;
+        font-size: 25px;
+    }
+    .fonctionnement__vignette{
+        flex-direction: column;
+        width: 30%;
+    }
+    .chiffre{
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+    }
+    .restaurants{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .restaurants__vignette{
+        width: 20%;
+    }
+    .restaurants h2{
+        width: 100%;
+    }
+    footer{
+        text-align: center;
     }
 }
