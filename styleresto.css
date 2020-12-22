@@ -151,8 +151,7 @@ main h3{
     width: 90%;
     background-color: #FFF;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    flex-wrap: wrap;
     margin: 10px auto;
     padding: 15px 0 15px 15px;
     border-radius: 20px;
@@ -205,16 +204,19 @@ main h3{
 
 /*CHECK CIRCLE*/
 .check .fas{
-    float: right;
+    color: white;
+    font-size: x-large;
 }
 .check{
     position: absolute;
-    display: block;
+    display: flex;
     width: 20%;
     background-color: #99E2D0;
-    height: 37px;
-    padding: 15px;
+    height: 40px;
+    padding: 14px;
     border-radius: 0 20px 20px 0;
+    justify-content: center;
+    align-items: center;
 }
 
 
