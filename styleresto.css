@@ -209,7 +209,7 @@ main h3{
     font-size: x-large;
 }
 .check{
-    display: flex;
+    display: none;
     padding: 0 20px;
     background-color: #99E2D0;
     height: 60px;
@@ -217,11 +217,17 @@ main h3{
     justify-content: center;
     align-items: center;
 }
+.vignette:hover .check{
+    display: flex;
+}
 .flextitre{
     padding: 10px;
-    width: 70%;
+    width: 94%;
 }
 
+.vignette:hover .flextitre {
+    width: 75%;
+}
 
 /*BOUTTON*/
 main button{
@@ -263,7 +269,11 @@ footer{
     margin: 5px 10px;
 }
 
-
+@keyframes slideIn {
+    from{
+        margin-left: 100%;
+    }
+}
 
 
 
