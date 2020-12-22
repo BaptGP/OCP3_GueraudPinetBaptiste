@@ -157,6 +157,7 @@ main h3{
     box-shadow: 0 5px 5px #cfcfcf;
     height: 60px;
     justify-content: space-between;
+    overflow: hidden;
 }
 .vignette h4{
     margin-bottom: 5px;
@@ -207,18 +208,26 @@ main h3{
 .check .fas{
     color: white;
     font-size: x-large;
+    transform: rotate(-360deg);
+}
+.vignette:hover .fas{
+    transform: rotate(0);
+    transition-duration: 0.5s;
 }
 .check{
-    display: none;
+    display: flex;
     padding: 0 20px;
     background-color: #99E2D0;
     height: 60px;
     border-radius: 0 20px 20px 0;
     justify-content: center;
     align-items: center;
+    margin-right: -5rem;
+    transition: all 0.5s;
 }
 .vignette:hover .check{
-    display: flex;
+    margin-right: 0;
+    transition: all 0.5s;
 }
 .flextitre{
     padding: 10px;
@@ -227,7 +236,10 @@ main h3{
 
 .vignette:hover .flextitre {
     width: 75%;
+    transition-duration: 0.5s;
 }
+
+
 
 /*BOUTTON*/
 main button{
@@ -267,12 +279,6 @@ footer{
 }
 .footer{
     margin: 5px 10px;
-}
-
-@keyframes slideIn {
-    from{
-        margin-left: 100%;
-    }
 }
 
 
