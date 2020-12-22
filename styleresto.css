@@ -153,9 +153,10 @@ main h3{
     display: flex;
     flex-wrap: wrap;
     margin: 10px auto;
-    padding: 15px 0 15px 15px;
     border-radius: 20px;
     box-shadow: 0 5px 5px #cfcfcf;
+    height: 60px;
+    justify-content: space-between;
 }
 .vignette h4{
     margin-bottom: 5px;
@@ -208,15 +209,17 @@ main h3{
     font-size: x-large;
 }
 .check{
-    position: absolute;
     display: flex;
-    width: 20%;
+    padding: 0 20px;
     background-color: #99E2D0;
-    height: 40px;
-    padding: 14px;
+    height: 60px;
     border-radius: 0 20px 20px 0;
     justify-content: center;
     align-items: center;
+}
+.flextitre{
+    padding: 10px;
+    width: 70%;
 }
 
 
