@@ -151,7 +151,6 @@ main h3{
     width: 90%;
     background-color: #FFF;
     display: flex;
-    flex-wrap: wrap;
     margin: 10px auto;
     border-radius: 20px;
     box-shadow: 0 5px 5px #cfcfcf;
@@ -161,6 +160,9 @@ main h3{
 }
 .vignette h4{
     margin-bottom: 5px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
 }
 .vignette p{
     overflow: hidden;
@@ -230,7 +232,7 @@ main h3{
     transition: all 0.5s;
 }
 .flextitre{
-    padding: 10px;
+    padding: 10px 0 10px 10px;
     width: 94%;
     transition-duration: 0.5s;
     transition-delay: 0.01s;
@@ -286,7 +288,7 @@ footer{
 
 
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 900px){
     .lapalette img{
         height: 500px;
     }
